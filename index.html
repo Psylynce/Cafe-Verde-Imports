@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Caf&eacute; Verde Imports</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,7 +12,10 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 41px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .content{
+        padding-top: 20px;
       }
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -55,12 +58,91 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
 
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/f2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/f2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="Images/f2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+      <!-- <img class="banner" src="images/f2.jpg" alt=""/> -->
+      <div class="content">
+        <div class="span3">
+          <div class="well">
+            <p class="lead">Not sure what to do with this. maybe pull people's tweets about Caf&eacute; Verde Imports</p>
+          </div>
+        </div>
+        <div class="span6">
+          <div class="well">
+            <h1>About Caf&eacute; Verde Imports</h1>
+            <p class="lead">
+              This will be a brief history on Caf&eacute; Verde Imports.
+            </p>
+            <p>
+              Here is the actual story and history written out in all its glory.
+            </p>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="well">
+            <h3>Here will be some social stuff</h3>
+            <p class="lead">Like facebook, twitter, donation, etc.</p>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Caf&eacute; Verde Imports, LLC &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <footer>
 
     </div> <!-- /container -->
+
+    <!-- Scripts at the bottom so the page loads quicker -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
 
   </body>
 </html>

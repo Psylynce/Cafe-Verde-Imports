@@ -14,6 +14,9 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      .sidebar{
+        border-right: 1px solid #000;
+      }
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -55,30 +58,46 @@
     </div>
 
     <div class="container">
-
-      <div class="row-fluid">
-        <div class="span6">
-          <h2>Contact Caf&eacute; Verde Imports</h2>
-          <p class="lead">Let us know how we could improve or what we are doing right!</p>
-          <form>
-            <fieldset>
-              <input type="text" class="span8" placeholder="Full Name"/><br>
-              <input type="text" class="span8" placeholder="Email Address"/><br>
-              <input type="text" class="span8" placeholder="Subject"/><br>
-              <textarea rows="5" class="span8"></textarea><br>
-              <button type="sumbit" class="btn btn-primary">Send</button>
-            </fieldset>
-          </form>
-        </div>
-        <div class="span6">
-          <h2>Follow us on these Social Networks</h2>
-          <iframe class="offset6" src="http://www.facebook.com/plugins/like.php?href=YOUR_URL"
-          scrolling="no" frameborder="0"
-          style="border:none; width:450px; height:80px"></iframe>
+      <div class="well">
+        <div class="row-fluid">
+          <div class="span6 sidebar">
+            <h2>Contact Caf&eacute; Verde Imports</h2>
+            <p class="lead">Let us know how we could improve or what we are doing right!</p>
+            <form>
+              <fieldset>
+                <input type="text" class="span8" placeholder="Full Name"/><br>
+                <input type="text" class="span8" placeholder="Email Address"/><br>
+                <input type="text" class="span8" placeholder="Subject"/><br>
+                <textarea rows="5" class="span8"></textarea><br>
+                <button type="sumbit" class="btn btn-primary">Send</button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="span6">
+            <h2>Follow us on these Social Networks</h2>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=YOUR_URL"
+            scrolling="no" frameborder="0"
+            style="border:none; width:450px; height:80px"></iframe>
+            <!-- <a href="https://twitter.com/CafeVerdeImport" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @CafeVerdeImport</a> -->
+            <!-- <script>
+              !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;
+                  js.src="//platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js,fjs);
+                }}(document,"script","twitter-wjs");
+            </script> -->
+            <!-- <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="258" height="338" title="Click Here to donate!" type="application/x-shockwave-flash"><param name="movie" value="//funds.gofundme.com/Widgetflex.swf" /><param name="quality" value="high" /><param name="flashvars" value="page=2enqfw&template=6" /><param name="wmode" value="transparent" /><embed allowScriptAccess="always" src="//funds.gofundme.com/Widgetflex.swf" quality="high" flashVars="page=2enqfw&template=6" type="application/x-shockwave-flash" wmode="transparent" width="258" height="338"></embed></object> -->
+          </div>
         </div>
       </div>
 
     </div> <!-- /container -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
   </body>
 </html>
