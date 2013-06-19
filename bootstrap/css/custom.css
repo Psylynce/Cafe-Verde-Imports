@@ -1,3 +1,49 @@
 .flexible {
 	max-width:100%;
 }
+
+#logobox 
+{
+	position: absolute;
+	top:5%;
+	left:5%;
+	width:200px;
+	height: 200px;
+	*z-index: 90;
+}
+.section-container
+{
+	text-align:center;
+	margin: 0 auto;
+	background-image: url(../img/bg2.jpg);
+}
+.center
+{
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+.extra-pad
+{
+	padding-top: 200px;
+}
+.sticky-banner
+{
+	margin-left:0;
+	background:#fff;
+	opacity: .95;
+	width: 1170px;
+	height: 50px;
+}
+.h5-center-text
+{
+	-webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+.header-fancy
+{
+	font-family: dynalight, sans-serif;
+}
+	
