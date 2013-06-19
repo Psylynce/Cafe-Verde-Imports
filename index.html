@@ -151,14 +151,14 @@
       </div>
     </div>
 
-    <section id="intro" data-speed="5" data-type="background">
+    <section id="intro" data-speed="5" data-type="background" data-0="background-position: 0px 0px;" data-1000="background-position: 0px 50px;">
       <div class="middle">
         <img src="images/logo.png" alt="Caf&eacute; Verde Logo"/>
       </div>
     </section>
 
-    <section id="second" data-speed="10" data-type="background">
-      <div class="content">
+    <section id="second" data-speed="10" data-type="background" data-1000="background-position: 0px 0px;" data-2000="background-position: 0px 50px;">
+      <div class="content" data-1000="opacity: 1.0;" data-2000="opacity: 0.0;">
         <h1 class="white">Now in Brooklyn!</h1>
         <h3 class="white">As well as our original location, Boulder Colorado!</h3>
         <b><p class="white">Some words here about Caf&eacute; Verde Imports and some about the beans. Button on bottom will bring the user to the products page where they can learn more about the beans and buy some!</p></b>
@@ -284,6 +284,15 @@
         })
       }(window.jQuery)
     </script>
+       <script src="bootstrap/js/skrollr.js"></script>
+    <script type="text/javascript">
+         window.onload = function() {
+                skrollr.init({
+                forceHeight: false
+        });
+        }
+        </script>
+
 
   </body>
 </html>
