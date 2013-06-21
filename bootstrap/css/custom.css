@@ -29,11 +29,12 @@
 }
 .sticky-banner
 {
-	margin-left:0;
+	margin-left:0px;
 	background:#fff;
 	opacity: .95;
-	width: 1170px;
+	
 	height: 50px;
+	z-index: 99;
 }
 .h5-center-text
 {
@@ -47,3 +48,15 @@
 	font-family: dynalight, sans-serif;
 }
 	
+.nav-container {
+    text-align: center;
+}
+
+.menu-nav {
+    float: none;
+    display: inline-block;
+}
+.thumb-roasted
+{
+	border: 1px solid rgba(64, 39, 19, 0.70);
+}
