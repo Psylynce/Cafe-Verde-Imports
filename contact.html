@@ -10,12 +10,10 @@
 
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/custom.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-      .sidebar{
-        border-right: 1px solid #000;
       }
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -35,7 +33,7 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -43,12 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
               <li><a href="product.html">Product</a></li>
               <li><a href="tourism.html">Tourism</a></li>
+              <li><a href="index.html" class="brand"><img src="bootstrap/img/logo2.png" style="height: 40px;"/></a></li>
               <li><a href="news.html">News</a></li>
               <li class="active"><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -58,6 +55,7 @@
     </div>
 
     <div class="container">
+      <!-- <div class="sticky-banner" style="position: fixed; top: 0px; text-align: center;" data-0="opacity: .0;" data-200="opacity: .70;"><h4 style="padding-right: 30px;">Contact Us</h4></div> -->
       <div class="well">
         <div class="row-fluid">
           <div class="span6 sidebar">
@@ -69,7 +67,7 @@
                 <input type="text" class="span8" placeholder="Email Address"/><br>
                 <input type="text" class="span8" placeholder="Subject"/><br>
                 <textarea rows="5" class="span8"></textarea><br>
-                <button type="sumbit" class="btn btn-primary">Send</button>
+                <button type="sumbit" class="btn btn-success">Send</button>
               </fieldset>
             </form>
           </div>

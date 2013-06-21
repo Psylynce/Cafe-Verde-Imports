@@ -10,12 +10,17 @@
 
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/custom.css" rel="stylesheet">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet' type='text/css'> -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <style>
       body {
         padding-top: 41px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
-      iframe{
-        border: none;
+      hr{
+        color: #000;
+        background-color: #000;
       }
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -35,24 +40,8 @@
     
   </head>
 
-  <body onload="parent.resizeIframe(document.body.scrollHeight)">
-  <script type="text/javascript">
-
-      function resizeIframe(newHeight){
-        document.getElementById('storyHolder').style.height = parseInt(newHeight,10) + 500 + 'px';
-      }
-
-      // s is an html file that will load in the iframe
-      // write a story in the style that story1.html is written in
-      // then add a link on the side-nav below like this
-      // <li><a href="#" onClick="javascript:getStory('story1.html')">Story One</a></li>
-      // this will get the html file and show it when the user clicks on the link
-      // make sure that the html file is in the same folder as the news.html
-      function getStory(s){
-        document.getElementById("storyHolder").src = s;
-      }
-    </script>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -60,12 +49,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
               <li><a href="product.html">Product</a></li>
               <li><a href="tourism.html">Tourism</a></li>
+              <li><a href="index.html" class="brand"><img src="bootstrap/img/logo2.png" style="height: 40px;"/></a></li>
               <li class="active"><a href="news.html">News</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -76,50 +64,77 @@
 
     <div class="container-fluid">
 
-      <!-- <img class="banner" src="images/f2.jpg" alt=""/> -->
+      <div class="sticky-banner" style="position: fixed; top: 0px; text-align: center;" data-0="opacity: .0;" data-200="opacity: .70;"><h4 class="header-fancy" style="padding-right: 30px;">News</h4></div>
+      <div class="well">
+        <div class="storyHolder">
+          <h1 class="text-center storyHeader">CU-Boulder Trip Inspires Coffee-Buying Business</h1>
+          <h3 class="text-center">Alum plans to bring Nicaraguan coffee to local brewers</h3>
+          <i><p class="text-center">Whitney Bryen | 1/27/2012</p></i>
+          <div class="story">
+            
+            <p>For University of Colorado alumnus Michael Pearl, a two-week trip to Nicaragua turned into more than just his last college hurrah.</p>
 
-      <h1>Recent News</h1>
-      <h4>Keep up with Caf&eacute; Verde Imports</h4>
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">News Stories</li>
-              <li><a href="#" onClick="javascript:getStory('story1.html')">Story One</a></li>
-              <li><a href="#" onClick="javascript:getStory('story2.html')">Story Title Two</a></li>
-              <li><a href="#" onClick="javascript:getStory('story3.html')">Woohoo 3</a></li>
-              <li><a href="#" onClick="javascript:getStory('story4.html')">Yippeee 4</a></li>
-              <li><a href="#" onClick="javascript:getStory('story5.html')">Here comes number 5</a></li>
-            </ul>
+            <p>Pearl attended an alternative break trip through CU’s Volunteer Resource Center in May following graduation and came home with his own business.</p>
+
+            <p>The students worked on a coffee farm in northern Nicaragua where Pearl connected with one of the farmers and was inspired to start an organic, fair-trade, coffee buying business that could help grow the business and surrounding economy.</p>
+
+            <p>“Basically, I wanted to cut out the middle man,” Pearl said. “Typically, there are several people involved in the buying process so I thought I could buy directly from the farm and sell the coffee to a roaster and cut down on the people involved and increase the profit for the farm.”</p>
+
+            <p>About six months after returning from his trip, Pearl launched Cafe Verde Imports and said he is expecting to buy his first batch of coffee any day now.</p>
+
+            <p>“These people work so hard and it really inspired me to want to help them,” Pearl said. “They don’t have much but they have such a great attitude about everything and that really made me thankful for what I have and want to use my resources and my international business degree to help.”</p>
+
+            <p>Jen Ross, director of CU’s Volunteer Resource Center said the two-week breaks focus on social issues and are intended to impact students like Pearl to make changes inspired by what they learn during the trips.</p>
+
+            <p>“It’s what sets alternative breaks apart,” Ross said.</p>
+
+            <p>It’s common for students to change majors or career paths following an alternative break trip, Ross said.</p>
+
+            <p>Pearl said it was the combination of community and coffee that turned his trip into a business plan.</p>
+
+            <p>“We stayed with families on this coffee farm in the mountains while we worked there,” Pearl said. “Every morning we would get up and our family would make breakfast for us from their gardens and we would drink coffee that was grown there and we would have this amazing, fresh coffee every day.”</p>             
+
+            <p>Cafe Verde Imports is still in the early stages but Pearl said he has plans to expand the business to include travel information about the country as well — another economy booster for the region.</p>
+
+            <p>Ross said students still have time to get an application in for this year’s trips but the center offers many local volunteer opportunities for students who aren’t ready to attend a two-week trip.</p>
+
+            <p>“Once a student starts working with us, they usually continue,” Ross said.</p>
+
+            <hr>
+
+            <a href="http://www.coloradodaily.com/cu-boulder/ci_19835225#axzz1kxSxHZf9">From ColoradoDaily.com</a>
+
           </div>
         </div>
-        <iframe class="span9" id="storyHolder" src="story1.html"/>
-        <!-- <div class="span9">
-          <div class="well">
-            <div class="row-fluid">
-              <div class="span3"><img src="images/p1.jpg" alt="Pic here"></div>
-              <div class="span9">
-                <h1>Headline Will Go Here</h1>
-                <h4>Sub-headline will go in this beautiful spot</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
-
-<p>Cras non dolor et est eleifend dapibus. Aenean lorem tellus, luctus id nisl quis, pellentesque faucibus risus. Nullam libero sapien, sodales et nisl at, adipiscing feugiat arcu. Etiam sed quam ultrices, adipiscing massa vulputate, volutpat elit. Etiam ac purus sit amet libero ullamcorper consequat. Pellentesque pharetra, justo a egestas pellentesque, odio nulla sagittis nunc, sodales sollicitudin ipsum est nec lorem. Nulla posuere est id massa fermentum bibendum. Vivamus sodales, nunc ut fringilla condimentum, ligula nisi pellentesque purus, nec cursus leo risus in turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula sit amet erat a luctus.</p>
-
-<p>Fusce accumsan nibh vitae malesuada condimentum. Nulla accumsan velit tortor, sit amet scelerisque felis laoreet et. Integer sit amet erat sed eros malesuada pulvinar at at risus. Vestibulum leo libero, egestas in dolor non, tristique pulvinar nisl. Nulla non elit eu sapien porttitor fringilla in eu dolor. Quisque venenatis, ligula sed porttitor pulvinar, elit risus vulputate sem, ut rhoncus turpis risus vel justo. Maecenas tristique, sapien at commodo consequat, justo dolor gravida dui, sit amet dapibus arcu odio a lacus. Nulla et ipsum sed purus bibendum mattis ac ut tellus. Sed facilisis, sem ut sagittis posuere, dui velit posuere magna, dictum mollis arcu nibh id leo. Mauris tempus velit enim, a lacinia velit consequat pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-<p>Proin ante turpis, malesuada ac porttitor sed, molestie non ante. Nunc lacus mauris, mollis ut lobortis ac, vestibulum id nulla. Nulla sodales scelerisque purus nec ornare. Donec pulvinar euismod dignissim. Morbi feugiat sem sed massa sollicitudin feugiat. Nam quis erat rutrum, tincidunt nibh id, auctor nisl. Curabitur in nisi in mauris consectetur suscipit. In congue orci ut varius egestas. Quisque sapien metus, ultricies in adipiscing vel, convallis sed nibh. Praesent in libero vel odio semper semper. Suspendisse posuere a metus vitae venenatis. Quisque pharetra lorem eu consequat elementum. Praesent quis massa vitae ante imperdiet pulvinar. Pellentesque condimentum nec ligula sit amet semper. Pellentesque rutrum posuere tortor non bibendum.</p>
-
-<p>In ac convallis libero. Etiam vel augue sagittis, interdum mauris vehicula, convallis lorem. Ut vulputate dictum magna, vel tristique ipsum dignissim at. Aenean vestibulum ipsum purus, sit amet vehicula sem facilisis ac. Nulla eget interdum sapien. Sed lobortis libero at sem vehicula dignissim. Cras dignissim ac urna quis aliquam. Mauris commodo blandit libero et pulvinar. Mauris eget auctor elit. Curabitur quis felis elit. Nullam sit amet ante non nulla fermentum venenatis eu in nunc. Curabitur et eros id velit malesuada rhoncus in vitae dui. Nam sollicitudin odio ut odio lacinia volutpat. Fusce ut ligula eu nunc euismod convallis eu at quam.</p>
-              </div>
-            </div>
+        <div class="storyHolder">
+          <h1 class="text-center storyHeader">Header Here</h1>
+          <h3 class="text-center">Sub head here</h3>
+          <i><p class="text-center">Author, date posted</p></i>
+          <div class="story">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
           </div>
-        </div> -->
+        </div>
+        <div class="storyHolder">
+          <h1 class="text-center storyHeader">Header Here</h1>
+          <h3 class="text-center">Sub head here</h3>
+          <i><p class="text-center">Author, date posted</p></i>
+          <div class="story">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar euismod erat in semper. Nam at tristique libero, quis aliquet dui. Phasellus sagittis elit sed ornare vestibulum. Fusce in urna vitae libero adipiscing sagittis sit amet quis justo. Donec interdum ornare euismod. Donec malesuada sit amet mauris nec vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin feugiat tellus orci, vel dapibus magna porta id. Nulla volutpat odio justo, et consequat magna placerat et. Vivamus tortor augue, venenatis sed lacinia sit amet, rhoncus in neque. Pellentesque elementum pretium porttitor. Maecenas vestibulum rhoncus lectus.</p>
+          </div>
+        </div>
+      </div>
+
       </div>
 
     </div> <!-- /container -->
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
 
   </body>
 </html>
