@@ -1,0 +1,62 @@
+
+/*======= index.html =======*/
+#page1 #content .row-1 .col-1 {width:305px; margin-right:22px;}
+#page1 #content .row-1 .col-2 {width:305px; margin-right:22px;}
+#page1 #content .row-1 .col-3 {width:305px;}
+
+#page1 #content .row-2 .col-1 {width:632px; margin-right:22px;}
+#page1 #content .row-2 .col-2 {width:305px;}
+
+/*======= index-1.html =======*/
+#page2 #content .row-1 .col-1 {width:632px; margin-right:22px;}
+#page2 #content .row-1 .col-2 {width:305px;}
+
+#page2 #content .row-2 .col-1 {width:632px; margin-right:22px;}
+#page2 #content .row-2 .col-2 {width:305px;}
+
+/*======= index-2.html =======*/
+#page3 #content .row-1 .col-1 {width:632px; margin-right:22px;}
+#page3 #content .row-1 .col-2 {width:305px;}
+
+#page3 #content .row-1 .col-1 .col-1 {width:295px; margin-right:30px;}
+#page3 #content .row-1 .col-1 .col-2 {width:298px;}
+
+#page3 #content .row-2 .col-1 {width:632px; margin-right:22px;}
+#page3 #content .row-2 .col-2 {width:305px;}
+
+/*======= index-3.html =======*/
+#page4 #content .row-1 .col-1 {width:305px; margin-right:22px;}
+#page4 #content .row-1 .col-2 {width:305px; margin-right:22px;}
+#page4 #content .row-1 .col-3 {width:305px;}
+
+#page4 #content .row-2 .col-1 {width:305px; margin-right:22px;}
+#page4 #content .row-2 .col-2 {width:305px; margin-right:22px;}
+#page4 #content .row-2 .col-3 {width:305px;}
+
+
+/*======= index-4.html =======*/
+#page5 #content .row-1 .col-1 {width:305px; margin-right:22px;}
+#page5 #content .row-1 .col-2 {width:305px; margin-right:22px;}
+#page5 #content .row-1 .col-3 {width:305px;}
+
+#page5 #content .row-2 .col-1 {width:632px; margin-right:22px;}
+#page5 #content .row-2 .col-2 {width:305px;}
+
+/*======= index-5.html =======*/
+#page6 #content .col-1 {width:291px; margin-right:34px;}
+#page6 #content .col-2 {width:616px;}
+
+/*======= index-6.html =======*/
+#page7 #content .col-1 {width:291px; margin-right:34px;}
+#page7 #content .col-2 {width:291px; margin-right:34px;}
+#page7 #content .col-3 {width:291px;}
+
+/*======= index-7.html =======*/
+#page8 #content {width:100%; padding:28px 0 30px;}
+
+
+
+
+
+
+
