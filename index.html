@@ -30,16 +30,18 @@
       }
 
       #intro { 
-      background: url(images/fotolia.jpg) 50% 0 fixed; 
+      background: url(bootstrap/img/fotolia.jpg) 50% 0 fixed; 
       height: auto;  
       margin: 0 auto; 
+      margin-top: -80px; /*added this crap*/
         width: 100%; 
         position: relative; 
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
         padding: 100px 0;
+        z-index: -1; /*and this*/
       }
       #second { 
-        background: url(images/brooklyn.jpg) 50% 0 fixed; 
+        background: url(bootstrap/img/brooklyn.jpg) 50% 0 fixed; 
         height: auto;  
         margin: 0 auto; 
           width: 100%; 
@@ -100,7 +102,7 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-inverse navbar-static-top putontop">
       <div class="navbar-inner">
         <div class="container" data-200="opacity: 1.0;" data-500="opactiy: 0.0;">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
